@@ -3,6 +3,7 @@
     <Header/>
     <MainOne/>
     <Services/>
+    <FooterTop/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header.vue';
 import MainOne from './components/MainOne.vue';
 import Services from './components/Services.vue';
+import FooterTop from './components/FooterTop.vue';
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Header,
     MainOne,
     Services,
+    FooterTop
   }
 }
 </script>
