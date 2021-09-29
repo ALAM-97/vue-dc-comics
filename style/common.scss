@@ -16,4 +16,10 @@ body {
 }
 .container {
     width: $containerWidth;
+    margin: auto;
+}
+
+// COMMON
+li {
+    list-style: none;
 }
