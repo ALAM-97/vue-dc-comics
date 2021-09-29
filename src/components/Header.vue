@@ -1,12 +1,15 @@
 <template>
-    <header>
-        <img src="../assets/dc-logo.png" alt="DC Logo">
-        <nav>
-            <ul>
-                <li v-for="(link, index) in links" :key="index"><a :href="link.url" :class="{ active : link.current }">{{link.title}}</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header class="container">
+            <img src="../assets/dc-logo.png" alt="DC Logo">
+            <nav>
+                <ul>
+                    <li v-for="(link, index) in links" :key="index"><a :href="link.url" :class="{ active : link.current }">{{link.title}}</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    
 </template>
 
 <script>
@@ -80,6 +83,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: auto;
         img {
             width: 8%;
         }
