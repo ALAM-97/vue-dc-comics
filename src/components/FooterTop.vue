@@ -5,34 +5,23 @@
                 <div class="col">
                     <h6>DC COMICS</h6>
                     <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
+                        <li v-for="(link, index) in dcComics" :key="index">
+                            {{link.linkName}}
+                        </li>
                     </ul>
                     <h6>SHOP</h6>
                     <ul>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
+                        <li v-for="(link, index) in shop" :key="index">
+                            {{link.linkName}}
+                        </li>
                     </ul>
                 </div>
                 <div class="col">
                     <h6>DC</h6>
                     <ul>
-                        <li>Terms Of Use</li>
-                        <li>Privacy policy (New)</li>
-                        <li>Ad Choices</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscriptions</li>
-                        <li>Talent Workshops</li>
-                        <li>CPSC Certificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Help</li>
-                        <li>Contact Us</li>
+                        <li v-for="(link, index) in dc" :key="index">
+                            {{link.linkName}}
+                        </li>
                     </ul>
                 </div>
                 <div class="col">
@@ -55,7 +44,99 @@
 
 <script>
 export default {
-    name: 'FooterTop'
+    name: 'FooterTop',
+    data() {
+        return {
+            dcComics:
+            [
+                {
+                    linkName: "Characters"
+                },
+                {
+                    linkName: "Comics"
+                },
+                {
+                    linkName: "Movies"
+                },
+                {
+                    linkName: "TV"
+                },
+                {
+                    linkName: "Games"
+                },
+                {
+                    linkName: "Videos"
+                },
+                {
+                    linkName: "News"
+                }
+            ],
+            shop:
+            [
+                {
+                    linkName: "Shop DC"
+                },
+                {
+                    linkName: "Shop DC Collectibles"
+                }
+            ],
+            dc:
+            [
+                {
+                    linkName: "Terms Of Use"
+                },
+                {
+                    linkName: "Privacy policy (New)"
+                },
+                {
+                    linkName: "Ad Choices"
+                },
+                {
+                    linkName: "Advertising"
+                },
+                {
+                    linkName: "Jobs"
+                },
+                {
+                    linkName: "Subscriptions"
+                },
+                {
+                    linkName: "Talent Workshops"
+                },
+                {
+                    linkName: "CPSC Certificates"
+                },
+                {
+                    linkName: "Ratings"
+                },
+                {
+                    linkName: "Shop Help"
+                },
+                {
+                    linkName: "Contact Us"
+                }
+            ],
+            sites:
+            [
+                {
+                    linkName: "DC"
+                },
+                {
+                    linkName: "MAD Magazine"
+                },
+                {
+                    linkName: "DC Kids"
+                },
+                {
+                    linkName: "DC Universe"
+                },
+                {
+                    linkName: "DC Power Visa"
+                }
+            ]
+            
+        }
+    }
 }
 </script>
 

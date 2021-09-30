@@ -9,7 +9,9 @@
             <div class="footer-right">
                 <h5>FOLLOW US</h5>
                 <ul>
-                    <li><img src="../assets/footer-facebook.png" alt="FB Logo"></li>
+                    <li v-for="(icon, index) in icons" :key="index">
+                        <img :src="require(~@/assets/img/footer-${icon.name})"   alt="FB Logo">
+                    </li>
                     <li><img src="../assets/footer-twitter.png" alt="Twitter Logo"></li>
                     <li><img src="../assets/footer-youtube.png" alt="YouTube Logo"></li>
                     <li><img src="../assets/footer-pinterest.png" alt="Pinterest Logo"></li>
@@ -22,7 +24,29 @@
 
 <script>
 export default {
-    name: 'FooterBottom'
+    name: 'FooterBottom',
+    data() {
+        return {
+            icons:
+            [
+                {
+                    name: "facebook.png",
+                },
+                {
+                    name: "twitter.png",
+                },
+                {
+                    name: "youtube.png",
+                },
+                {
+                    name: "pinterest.png",
+                },
+                {
+                    name: "periscope.png"
+                }
+            ]
+        }
+    }
 }
 </script>
 

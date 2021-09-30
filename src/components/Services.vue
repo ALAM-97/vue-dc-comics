@@ -2,25 +2,9 @@
     <body>
         <main class="container">
             <ul>
-                <li>
-                    <img class="digital-comics" src="../assets/buy-comics-digital-comics.png" alt="">
-                    <h4>DIGITAL COMICS</h4>
-                </li>
-                <li>
-                    <img src="../assets/buy-comics-merchandise.png" alt="">
-                    <h4>DC MERCHANDISE</h4>
-                </li>
-                <li>
-                    <img src="../assets/buy-comics-subscriptions.png" alt="">
-                    <h4>SUBSCRIPTION</h4>
-                </li>
-                <li>
-                    <img class="shop-locator" src="../assets/buy-comics-shop-locator.png" alt="">
-                    <h4>COMIC SHOP LOCATOR</h4>
-                </li>
-                <li>
-                    <img src="../assets/buy-dc-power-visa.svg" alt="">
-                    <h4>DC POWER VISA</h4>
+                <li v-for="(service, index) in services" :key="index">
+                    <img :class="service.class" :src="require(src/assets/img/service.url)" alt="">
+                    <h4>{{service.name}}</h4>
                 </li>
             </ul>
         </main>
@@ -30,6 +14,38 @@
 <script>
 export default {
     name: "Services",
+    data() {
+        return {
+            services:
+        [
+            {
+                name: "DIGITAL COMICS",
+                url: "buy-comics-digital-comics.png",
+                class: "digital-comics"
+            },
+            {
+                name: "DC MERCHANDISE",
+                url: "buy-comics-merchandise.png",
+                class: ''
+            },
+            {
+                name: "SUBSCRIPTIONS",
+                url: "buy-comics-subscriptions.png",
+                class: ''
+            },
+            {
+                name: "COMIC SHOP LOCATOR",
+                url: "buy-comics-shop-locator.png",
+                class: "shop-locator"
+            },
+            {
+                name: "DC POWER VISA",
+                url: "buy-dc-power-visa.svg",
+                class: ''
+            }
+        ]
+        }
+    }
 }
 </script>
     

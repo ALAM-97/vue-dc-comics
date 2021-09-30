@@ -84,7 +84,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         img {
-            width: 8%;
+            width: 6.5%;
         }
         ul {
             display: flex;
