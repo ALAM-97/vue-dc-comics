@@ -2,7 +2,8 @@
   <div id="app">
     <Header/>
     <Hero/>
-    <MainContent/>
+    <CurrentSeries/>
+    <Card/>
     <Services/>
     <FooterTop/>
     <FooterBottom/>
@@ -12,7 +13,8 @@
 <script>
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
-import MainContent from './components/MainContent.vue';
+import CurrentSeries from './components/CurrentSeries.vue';
+import Card from './components/Card.vue';
 import Services from './components/Services.vue';
 import FooterTop from './components/FooterTop.vue';
 import FooterBottom from './components/FooterBottom.vue';
@@ -22,7 +24,8 @@ export default {
   name: 'App',
   components: {
     Header,
-    MainContent,
+    CurrentSeries,
+    Card,
     Services,
     FooterTop,
     FooterBottom,
