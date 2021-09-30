@@ -1,7 +1,7 @@
 <template>
     <body>
         <header class="container">
-            <img src="../assets/dc-logo.png" alt="DC Logo">
+            <img src="../assets/img/dc-logo.png" alt="DC Logo">
             <nav>
                 <ul>
                     <li v-for="(link, index) in links" :key="index"><a :href="link.url" :class="{ active : link.current }">{{link.title}}</a></li>

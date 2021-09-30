@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="footer-right">
-                <img src="../assets/dc-logo-bg.png" alt="Footer DC Logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="Footer DC Logo">
             </div>
         </footer>
     </body>
@@ -145,7 +145,7 @@ export default {
     @import "../../style/variables.scss";
 
     body {
-        background-image: url("../assets/footer-bg.jpg");
+        background-image: url("../assets/img/footer-bg.jpg");
         background-size: cover;
         footer {
             display: flex;

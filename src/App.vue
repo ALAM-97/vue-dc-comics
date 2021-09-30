@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Header/>
-    <MainOne/>
+    <Hero/>
+    <MainContent/>
     <Services/>
     <FooterTop/>
     <FooterBottom/>
@@ -10,19 +11,22 @@
 
 <script>
 import Header from './components/Header.vue';
-import MainOne from './components/MainOne.vue';
+import Hero from './components/Hero.vue';
+import MainContent from './components/MainContent.vue';
 import Services from './components/Services.vue';
 import FooterTop from './components/FooterTop.vue';
 import FooterBottom from './components/FooterBottom.vue';
+
 
 export default {
   name: 'App',
   components: {
     Header,
-    MainOne,
+    MainContent,
     Services,
     FooterTop,
-    FooterBottom
+    FooterBottom,
+    Hero
   }
 }
 </script>

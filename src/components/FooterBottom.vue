@@ -10,12 +10,8 @@
                 <h5>FOLLOW US</h5>
                 <ul>
                     <li v-for="(icon, index) in icons" :key="index">
-                        <img :src="require(~@/assets/img/footer-${icon.name})"   alt="FB Logo">
+                        <img :src="require('../assets/img/footer-' + icon.name)"   alt="FB Logo">
                     </li>
-                    <li><img src="../assets/footer-twitter.png" alt="Twitter Logo"></li>
-                    <li><img src="../assets/footer-youtube.png" alt="YouTube Logo"></li>
-                    <li><img src="../assets/footer-pinterest.png" alt="Pinterest Logo"></li>
-                    <li><img src="../assets/footer-periscope.png" alt="Periscope Logo"></li>
                 </ul>
             </div>
         </footer>

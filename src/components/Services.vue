@@ -3,7 +3,7 @@
         <main class="container">
             <ul>
                 <li v-for="(service, index) in services" :key="index">
-                    <img :class="service.class" :src="require(src/assets/img/service.url)" alt="">
+                    <img :class="service.class" :src="service.url" alt="">
                     <h4>{{service.name}}</h4>
                 </li>
             </ul>
@@ -20,27 +20,27 @@ export default {
         [
             {
                 name: "DIGITAL COMICS",
-                url: "buy-comics-digital-comics.png",
+                url: require("../assets/img/buy-comics-digital-comics.png"),
                 class: "digital-comics"
             },
             {
                 name: "DC MERCHANDISE",
-                url: "buy-comics-merchandise.png",
+                url:  require("../assets/img/buy-comics-merchandise.png"),
                 class: ''
             },
             {
                 name: "SUBSCRIPTIONS",
-                url: "buy-comics-subscriptions.png",
+                url: require("../assets/img/buy-comics-subscriptions.png"),
                 class: ''
             },
             {
                 name: "COMIC SHOP LOCATOR",
-                url: "buy-comics-shop-locator.png",
+                url: require("../assets/img/buy-comics-shop-locator.png"),
                 class: "shop-locator"
             },
             {
                 name: "DC POWER VISA",
-                url: "buy-dc-power-visa.svg",
+                url: require("../assets/img/buy-dc-power-visa.svg"),
                 class: ''
             }
         ]
