@@ -2,7 +2,7 @@
     <div class="cards-container">
         <div class="square">
             <img :src="info.thumb" alt="">
-            <div>{{info.series}}</div>
+            <div>{{info.series.toUpperCase() }}</div>
         </div>
     </div>
 </template>
@@ -17,8 +17,8 @@ export default {
 <style lang="scss" scoped>
     .square {
         margin: 30px auto;
-        height: 150px;
-        width: 150px;
+        height: 170px;
+        width: 170px;
         img {
             width: 100%;
             height: 100%;
@@ -26,6 +26,7 @@ export default {
             object-position: top;
         }
         div {
+            font-size: 1rem;
             margin-top: 7px;
             color: #fff;
         }
