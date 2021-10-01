@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <Hero/>
+    <Hero :bgImage="require('./assets/img/jumbotron.jpg')"/>
     <CurrentSeries/>
     <Card/>
     <Services/>
@@ -29,7 +29,7 @@ export default {
     Services,
     FooterTop,
     FooterBottom,
-    Hero
+    Hero,
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <body>
-        <div class="hero">
+        <div class="hero" :style="`background-image: url(${bgImage})`">
             
         </div>
     </body>
@@ -9,6 +9,7 @@
 <script>
 export default {
     name: 'Hero',
+    props: ['bgImage']
 }
 </script>
 
@@ -18,9 +19,8 @@ export default {
 
     div {
         height: 21.875rem;
-        background-image: url("../assets/img/jumbotron.jpg");
         background-position: center top;
         background-size: cover;
     }
 
-</style>
+</style>                           

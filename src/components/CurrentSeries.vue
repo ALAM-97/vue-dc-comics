@@ -7,7 +7,9 @@
             <div class="cards">
                 <Card class="single-card" v-for="(data, index) in myJson" :key="index" :info="data"/>
             </div>
-            
+            <div class="section-footer">
+                LOAD MORE
+            </div>
         </main>
     </body>
 </template>
@@ -47,15 +49,26 @@
                 top: -30px;
                 left: -20px;
             }
+            .section-footer {
+                color: #fff;
+                font-size: 1.4rem;
+                font-weight: bold;
+                padding: 10px 70px;
+                background-color: $primaryColor;
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                transform: translateX(-50%);
+            }
         }
         
     }
     .cards {
         display: flex;
         flex-wrap: wrap;
-        padding: 30px 0 50px 0;
+        padding: 30px 0 140px 0;
         .single-card {
-            width: calc(100% / 6 );
+            width: calc(100% / 6);
         }
     }
 </style>
