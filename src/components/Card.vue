@@ -17,8 +17,8 @@ export default {
 <style lang="scss" scoped>
     .square {
         margin: 30px auto;
-        height: 170px;
-        width: 170px;
+        height: 150px;
+        width: 150px;
         img {
             width: 100%;
             height: 100%;
@@ -26,7 +26,7 @@ export default {
             object-position: top;
         }
         div {
-            font-size: 1rem;
+            font-size: .9rem;
             margin-top: 7px;
             color: #fff;
         }
