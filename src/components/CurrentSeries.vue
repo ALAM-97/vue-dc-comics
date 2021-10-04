@@ -66,9 +66,7 @@
     .cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         padding: 30px 0 140px 0;
-        .single-card {
-            width: calc(100% / 6);
-        }
     }
 </style>
